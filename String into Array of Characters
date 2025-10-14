@@ -1,0 +1,5 @@
+Print(“Enter the word:”)
+str=string(input())
+s_array=list(str)
+print(“The required list is”)
+print(s_array)
