@@ -1,0 +1,23 @@
+class Animal:
+    def __init__(self, name, species):
+        self.name = name
+        self.species = species
+    def make_sound(self):
+        print("This animal makes a sound.")
+class Dog(Animal):
+    def __init__(self, name):
+        super().__init__(name, "Dog")
+    def make_sound(self):
+        print("Bark!")
+class Cat(Animal):
+    def __init__(self, name):
+        super().__init__(name, "Cat")
+    def make_sound(self):
+        print("Meow!")
+dog1 = Dog("Tommy")
+cat1 = Cat("Kitty")
+print(f"Animal: {dog1.species}")
+dog1.make_sound()
+print(f"\nAnimal: {cat1.species}")
+cat1.make_sound()
+ 
