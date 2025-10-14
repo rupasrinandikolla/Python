@@ -1,0 +1,27 @@
+import numpy as np
+
+print("Help on add function:")
+np.info(np.add)
+
+arr = np.array([1, 2, 3, 4])
+print("\nArray:", arr)
+print("None of the elements are zero:", np.all(arr))
+
+arr1 = np.array([1, 2, 3, 4])
+arr2 = np.array([2, 2, 3, 5])
+
+print("\nArray1:", arr1)
+print("Array2:", arr2)
+
+print("Greater:", np.greater(arr1, arr2))
+print("Greater Equal:", np.greater_equal(arr1, arr2))
+print("Less:", np.less(arr1, arr2))
+print("Less Equal:", np.less_equal(arr1, arr2))
+print("Equal:", np.equal(arr1, arr2))
+print("Allclose:", np.allclose(arr1, arr2))
+
+print("\nZeros:", np.zeros(5))
+print("Ones:", np.ones(5))
+print("Linspace (0 to 1, 5 values):", np.linspace(0, 1, 5))
+print("Convert array to list:", arr1.tolist())
+
