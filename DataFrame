@@ -1,0 +1,16 @@
+import pandas as pd
+data={
+    'Name':['Rupa','Anu','Bunnie','Barun'],
+    'Score':[20,40,58,68],
+    'Attempts':[5,6,6,7],
+    'Qualify':['Yes','Yes','No','Yes']
+}
+labels=['a','b','c','d']
+df=pd.DataFrame(data,index=labels)
+print(df)
+df.loc[df['Name'] =='Rupa','Name']='Varshi'
+print("After replace:",df)
+df["Age"]=[10,20,19,2]
+print("New exiting column:",df)
+column_list=df.columns.tolist()
+print("Column list:",column_list)
