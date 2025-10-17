@@ -1,0 +1,10 @@
+import matplotlib.pyplot as plt 
+subjects = ['Math', 'Science', 'English', 
+'History', 'Art'] 
+marks = [85, 90, 78, 88, 95] 
+plt.barh(subjects, marks, color='lightblue', 
+edgecolor='black') 
+plt.title("Student Marks in Different Subjects") 
+plt.xlabel("Marks") 
+plt.ylabel("Subjects") 
+plt.show()
