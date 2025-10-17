@@ -1,0 +1,9 @@
+import matplotlib.pyplot as plt  
+days = [2,4,6,8,10] 
+temperature = [30, 32, 34, 33, 31]  
+plt.plot(days, temperature, color='green', 
+marker='d', linestyle=':') 
+plt.title("Temperature Variation Over a Week") 
+plt.xlabel("Day") 
+plt.ylabel("Temperature (°C)")  
+plt.show() 
