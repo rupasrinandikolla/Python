@@ -1,0 +1,18 @@
+import numpy as np
+arr=np.array([1,2,3,2,5,8,7,8,9])
+print("Original array:",arr)
+less_than_5 = arr[arr<5]
+greater_than_5 = arr[arr>5]
+print("\nNumbers less than 5 :",less_than_5)
+print("\nNumbers greater than 5:",greater_than_5)
+max_value=np.max(arr)
+min_value=np.min(arr)
+max_index=np.argmax(arr)
+min_index=np.argmin(arr)
+print("\nMaximum values is:",max_value)
+print("Minimum values is:",min_value)
+print(f"\nMaximum number {max_value} is at index:{max_index}")
+print(f"\nMinimum number {min_value} is at in")
+print("\nUnique values:",np.unique(arr))
+print("\nCount of each element:",np.bincount(arr))
+print("\nRepresentation of array:",repr(arr))
